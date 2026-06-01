@@ -64,13 +64,13 @@ double validate_double(String message) {
 
 double calculate_net_total(double total) {
   if (total >= 12500000) {
-    return total - (total * 0.2);
+    return total - ((total * 0.2) - 1225000);
   } else if (total >= 8500001) {
-    return total - (total * 0.15);
+    return total - ((total * 0.15) - 600000);
   } else if (total >= 2000001) {
-    return total - (total * 0.1);
+    return total - ((total * 0.1) - 175000);
   } else if (total >= 1500001) {
-    return total - (total * 0.05);
+    return total - ((total * 0.05) - 75000);
   } else {
     return total;
   }
